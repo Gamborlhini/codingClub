@@ -7,8 +7,14 @@ var oneDay = 1000 * 60 * 60 * 24;
 var day = Math.floor(diff / oneDay);
 
 /* This part parses the file into an array with each problem */
-var fs = require('fs');
-var problems = fs.readFileSync('../assets/problems.txt').toString().split("\n");
+var fr = new FileReader();
+
+fr.onload = function(e) {
+  var text = reader.result;
+}
+
+var problemsRaw = reader.readAsText("../assets/problems.txt");
+var problems = problemsRaw.toString().split("\n");
 
 /* Initializing variables */
 var todaysProblem, oldproblems;
