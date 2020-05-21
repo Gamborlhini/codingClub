@@ -19,7 +19,7 @@ var oldproblemsDisplay = document.getElementById("oldproblemsDisplay");
 
 /* Trimming down the problems array to only what we need so we don't get lag later*/
 if (problems.length>365) {
-  problems = problems.slice(364);
+  problems = problems.slice(0,364);
 }
 
 /*
@@ -28,7 +28,7 @@ Then compiling the oldproblems array by taking yesterdays problem and before mat
 -2 because the first date possible is 1 not 0
 */
 if (day != 1) {
-  oldproblems = problems.slice(dayminustwo);
+  oldproblems = problems.slice(0,dayminustwo);
 }
 else if (day == 1) {
   oldproblems = [];
@@ -38,7 +38,7 @@ else if (day == 1) {
 todaysProblem = problems[dayminusone];
 
 /* Prepping everything for display */
-oldproblemsPredisplay = oldproblems.join("\r\n");
+oldproblemsPredisplay = oldproblems.join("<br>");
 todaysProblemPredisplay = now.toDateString() + ": " + todaysProblem;
 
 /* Displaying everything */
