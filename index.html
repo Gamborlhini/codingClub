@@ -14,7 +14,14 @@
 </head>
 
 <body>
-  <!--Navbar-->
+  <script>
+    $(document).ready(function() {
+        $("#top-menu").load("html/menu.html");
+    });
+  </script>
+  <div id=top-menu>
+  </div>
+  <!--Navbar
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">Hawken Coding Club</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,6 +73,7 @@
       </ul>
     </div>
   </nav>
+-->
 
   <!--Carosel of images hopefully-->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
