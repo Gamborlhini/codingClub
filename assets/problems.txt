@@ -1,0 +1,31 @@
+This question involves reasoning about strings made up of uppercase letters. You will implement one related
+methods that appears in the same class (not shown). The first method takes a single string parameter and returns a
+scrambled version of that string.
+•
+•
+(a) Write the method scrambleWord, which takes a given word and returns a string that contains a
+scrambled version of the word according to the following rules.
+word Result returned by
+scrambleWord(word)
+
+"TAN" "TNA"
+"ABRACADABRA" "BARCADABARA"
+"WHOA" "WHOA"
+"AARDVARK" "ARADVRAK"
+"EGGS" "EGGS"
+"A" "A"
+
+
+Complete method scrambleWord below.
+ /** Scrambles a given word.
+ * @param word the word to be scrambled
+ * @return the scrambled word (possibly equal to word)
+ * Precondition: word is either an empty string or contains only uppercase letters.
+ * Postcondition: the string returned was created from word as follows:
+ * - the word was scrambled, beginning at the first letter and continuing from left to right
+ * - two consecutive letters consisting of "A" followed by a letter that was not "A" were swapped
+ * - letters were swapped at most once
+ */
+
+ public static String scrambleWord(String word)
+~~~
