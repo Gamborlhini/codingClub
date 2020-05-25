@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-.carousel-inner > .item > img {
-  width:640px;
-  height:360px;
+.carousel-item img {
+  width:100%;
 }
