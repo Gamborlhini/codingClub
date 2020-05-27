@@ -25,17 +25,3 @@ def generateCard(title, description, link):
     pass
 
 generateCard(titleinput, descriptioninput, iframeinput)
-
-"""
-<div class="col-md">
-<div class="card">
-<div class=\"card-head\">
-<h5 class=\"text-center\">
-<p> This is not the most in depth video. However, this video provides a very good overview of Java.</p>
-</div>
-<div class="card-body">
-<iframe src="https://www.youtube.com/embed/RRubcjpTkks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-"""
