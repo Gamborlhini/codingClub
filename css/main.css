@@ -8,3 +8,11 @@ html {
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0lax{text-align:left;vertical-align:top;}
 .tg .tg-02ax{text-aligh:left;vertical-align:top;padding-left: 50px;}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
