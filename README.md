@@ -1,4 +1,4 @@
-# codingClub
+# hawkencoding
 
 ## The Purpose of this Repository
 This repository is meant to host a website which will highlight our coding club's highlights and projects. The hope is that our members will eventually be able to work on the website and contribute their own projects and accomplishments to it.
