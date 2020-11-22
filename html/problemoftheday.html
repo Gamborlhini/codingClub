@@ -78,6 +78,59 @@
   }
         </code>
       </pre>
+      <p>Problem #2</p>
+      <pre>
+        <code>import java.util.Scanner;
+import java.lang.Math;
+class problem2{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number of sides");
+        int n = scan.nextInt();
+        System.out.println("Enter a side length");
+        int s = scan.nextInt();
+        System.out.println("Area: " + Math.round(((Math.pow(s,2)*n)/(4*Math.tan(Math.toRadians(180/n))))*100.0)/100.0);
+    }
+}
+        </code>
+      </pre>
+      <p>Problem #3</p>
+      <pre>
+        <code>import java.util.Scanner;
+import java.lang.Math;
+class problem3{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number of ballpoint pens");
+        int n = scan.nextInt();
+        System.out.println("Number of rollerball pens: " + Math.round((Math.log(12*Math.pow(n,Math.E))/Math.log(20))*100.0)/100.0);
+    }
+}
+        </code>
+      </pre>
+      <p></p>
+      <h5>Python:</h5>
+      <p>Problem #1</p>
+      <pre>
+        <code>r = int(input("Enter a radius to convert to the diameter and circumference"))
+print("Diameter:" + str(2*r) + "\nCircumference:" + str(3.14*2*r))
+        </code>
+      </pre>
+      <p>Problem #2</p>
+      <pre>
+        <code>import math
+n = int(input("How many sides does you regular polygon have?"))
+s = int(input("What is the length of each side?"))
+print(str(((s**2)*n)/round(4*math.tan(math.radians(180/n)),2)))
+        </code>
+      </pre>
+      <p>Problem #3</p>
+      <pre>
+        <code>import math
+n = int(input("Enter the number of ball point pens"))
+print("Number of rollerball pens: " + str(round(math.log(12*n**math.e)/math.log(20),2)))
+        </code>
+      </pre>
     </div>
     <p></p>
     <p></p>
