@@ -69,7 +69,7 @@ a.button4:hover{
 }
 
 
-.push_button {
+a.push_button {
 	position: relative;
 	width:220px;
 	height:40px;
